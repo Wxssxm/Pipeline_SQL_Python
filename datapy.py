@@ -1,6 +1,5 @@
 import mysql.connector
 
-# Connexion à la base de données
 conn = mysql.connector.connect(
     host="localhost",      # Adresse du serveur
     user="root",           # Nom d'utilisateur
@@ -10,7 +9,6 @@ conn = mysql.connector.connect(
 
 cursor = conn.cursor()
 
-# Exemple d'exécution d'une requête SQL
 # cursor.execute("""
 #     SELECT 
 #         e.prenom AS prenom_etudiant, 
